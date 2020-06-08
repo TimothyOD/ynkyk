@@ -19,9 +19,14 @@ collections:
       - {
           label: "Venue URL",
           name: "venueURL",
-          widget: "boolean",
-          required: "false",
+          widget: "string",
+          required: false,
         }
       - { label: "Performers", name: "performers", widget: "string" }
-      - { label: "Additional Info", name: "info", widget: "string" }
+      - {
+          label: "Additional Info",
+          name: "info",
+          widget: "string",
+          required: false,
+        }
       - { label: "Flyer", name: "flyer", widget: "image" }
