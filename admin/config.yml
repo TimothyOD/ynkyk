@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: TimothyOD/ynkyk
+  name: git-gateway
+  branch: master # Branch to update
 
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
