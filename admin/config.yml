@@ -13,13 +13,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - label: "Start time"
-        name: "start"
-        widget: "datetime"
-        default: ""
-        dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
-        timeFormat: "HH:mm" # e.g. 21:07
-        format: "LLL"
-        pickerUtc: false
+  name: "start"
+  widget: "datetime"
+  default: ""
+  dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+  timeFormat: "HH:mm" # e.g. 21:07
+  format: "LLL"
+  pickerUtc: false
       - { label: "Date", name: "date", widget: "datetime", default: "" }
       - { label: "Time", name: "time", widget: "string" }
       - { label: "Venue", name: "venue", widget: "string" }
