@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update
+  name: github
+  repo: TimothyOD/ynkyk
 
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
@@ -19,5 +19,4 @@ collections:
       - { label: "Venue URL", name: "venueURL", widget: "string" }
       - { label: "Performers", name: "performers", widget: "string" }
       - { label: "Additional Info", name: "info", widget: "string" }
-      - { label: "Flyer", name: "flyer", widget: "image" }
       - { label: "Flyer", name: "flyer", widget: "image" }
