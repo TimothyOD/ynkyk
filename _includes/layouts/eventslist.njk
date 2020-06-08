@@ -1,0 +1,19 @@
+<ul>
+  {% for events in eventslist %}
+    <li>
+      <strong>
+        <a href="{{ events.url | url }}">{{ events.data.title }}</a>
+      </strong>
+      -
+      <time datetime="{{ events.date | htmlDateString }}">{{ events.date | readableDate }}</time> {{ events.data.time }}
+      -
+      @ <a href="{{ events.data.venueURL }}" target='_blank'>{{ events.data.venue }}</a>
+      -
+      <span>{{ events.data.performers }}</span>
+      -
+      <span>{{ events.data.info }}</span>
+      
+      <img src="{{ events.data.flyer | url }}" alt="{{ events.data.title }}"></img>
+    </li>
+  {% endfor %}
+</ul>

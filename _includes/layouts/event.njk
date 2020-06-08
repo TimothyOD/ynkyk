@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+<h2>{{ title }}</h2>
+<h3>{{ date | readableDate }} {{ time }}</h3>
+@ <a href="{{ venueURL }}" target='_blank'>{{ venue }}</a>
+<h4>{{ performers }}</h4>
+<p>{{ info }}</p>
+<img src="{{ flyer | url }}" alt="{{ flyer }}"></img>
+<p>{{ content | safe }}</p>
