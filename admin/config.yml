@@ -16,7 +16,17 @@ collections:
       - { label: "Date", name: "date", widget: "date", default: "" }
       - { label: "Time", name: "time", widget: "string" }
       - { label: "Venue", name: "venue", widget: "string" }
-      - { label: "Venue URL", name: "venueURL", widget: "string" }
+      - {
+          label: "Venue URL",
+          name: "venueURL",
+          widget: "string",
+          required: "false",
+        }
       - { label: "Performers", name: "performers", widget: "string" }
-      - { label: "Additional Info", name: "info", widget: "string" }
+      - {
+          label: "Additional Info",
+          name: "info",
+          widget: "string",
+          required: "false",
+        }
       - { label: "Flyer", name: "flyer", widget: "image" }

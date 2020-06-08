@@ -1,6 +1,6 @@
 ---
 title: YNK≠39
-date: 2020-04-18
+date: 2020-12-21
 time: 8pm
 venue: Oxen Free
 venueURL: https://oxenfree.net
