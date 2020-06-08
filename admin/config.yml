@@ -20,3 +20,4 @@ collections:
       - { label: "Performers", name: "performers", widget: "string" }
       - { label: "Additional Info", name: "info", widget: "string" }
       - { label: "Flyer", name: "flyer", widget: "image" }
+      - { label: "Flyer", name: "flyer", widget: "image" }
