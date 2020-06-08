@@ -6,11 +6,11 @@ media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
- - name: "events" #The name of the collection and should match our posts.json file's tag
-   label: "Events" #The name of the collection on the CMS itself
-    folder: "events" #The folder that our blog posts will be loaded from and saved to
-    create: true #Tells the CMS that new posts can be created
-    slug: "{{slug}}" #this sets the URL for the post
+  - name: "events"
+    label: "Events"
+    folder: "events"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date", default: "" }
