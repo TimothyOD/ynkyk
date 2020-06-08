@@ -12,6 +12,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - label: "Start time"
   name: "start"
   widget: "datetime"
@@ -20,7 +21,6 @@ collections:
   timeFormat: "HH:mm" # e.g. 21:07
   format: "LLL"
   pickerUtc: false
-      - { label: "Date", name: "date", widget: "datetime", default: "" }
       - { label: "Time", name: "time", widget: "string" }
       - { label: "Venue", name: "venue", widget: "string" }
       - { label: "Venue URL", name: "venueURL", widget: "string" }
