@@ -30,4 +30,4 @@ collections:
           required: false,
         }
       - { label: "Flyer", name: "flyer", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
