@@ -13,8 +13,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { 
-          label: "Date/Time", 
+      - {
+          label: "Date/Time",
           name: "date",
           widget: "datetime",
           default: "",
@@ -39,8 +39,3 @@ collections:
           required: false,
         }
       - { label: "Flyer", name: "flyer", widget: "image" }
-
-
-      - label: "Start time"
-  name: "start"
-  
