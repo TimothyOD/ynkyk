@@ -1,0 +1,43 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;700;900&display=swap');
+// colors
+$colors: ( primary: burlywood,
+secondary: #ff00ff,
+base: #3d3d3d,
+hover: dimgrey,
+);
+@function color($color-name) {
+    @return map-get($colors,
+    $color-name);
+}
+
+// media
+$phone: 500px;
+@mixin phone {
+    @media (max-width: #{$small}) {
+        @content;
+    }
+}
+
+$small: 500px;
+@mixin small {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+$medium: 650px;
+@mixin medium {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+$desktop: 800px;
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}

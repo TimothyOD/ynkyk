@@ -1,19 +1,16 @@
-<ul>
-  {% for events in eventslist %}
+<ul class="event-container">
+  {% for events in eventslist | reverse %}
     <li>
-      <strong>
-        <a href="{{ events.url | url }}">{{ events.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ events.date | htmlDateString }}">{{ events.date | readableDate }}</time> {{ events.data.time }}
-      -
-      @ <a href="{{ events.data.venueURL }}" target='_blank'>{{ events.data.venue }}</a>
-      -
-      <span>{{ events.data.performers }}</span>
-      -
-      <span>{{ events.data.info }}</span>
-      
+    <a href="{{ events.url | url }}">
+    <div class="event-inner">
+      <div class="event-details">
+        <div class="event-name">
+        {{ events.data.title }}</div>
+      <div class="event-date"><time datetime="{{ events.date | htmlDateString }}">{{ events.date | readableDate }}</time></div>
+      <div class="event-venue">@ {{ events.data.venue }}</div>
+      </div>
       <img src="{{ events.data.flyer | url }}" alt="{{ events.data.title }}"></img>
+    </div></a>
     </li>
   {% endfor %}
 </ul>

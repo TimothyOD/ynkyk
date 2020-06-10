@@ -1,0 +1,46 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: color(base);
+    z-index: 1;
+    padding-top: 1.2rem;
+    padding-bottom: .5rem;
+    .ynk-logo {
+        font-size: 3.6rem;
+        line-height: 0;
+        font-family: 'BioRhyme Expanded', serif;
+        font-weight: 900;
+        a {
+            color: color(secondary);
+            &:hover {
+                color: color(hover);
+            }
+        }
+    }
+    .main-nav {
+        a {
+            color: color(secondary);
+            &:hover {
+                color: color(hover);
+            }
+        }
+        ul {
+            display: flex;
+            padding-bottom: .7rem;
+            font-size: .9rem;
+            list-style: none;
+        }
+        li {
+            margin-left: 1rem;
+            margin-right: 0;
+        }
+    }
+}

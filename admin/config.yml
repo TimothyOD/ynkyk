@@ -22,7 +22,7 @@ collections:
           widget: "string",
           required: false,
         }
-      - { label: "Performers", name: "performers", widget: "string" }
+      - { label: "With (Performers/Presenters", name: "with", widget: "string" }
       - {
           label: "Additional Info",
           name: "info",

@@ -1,0 +1,48 @@
+.a-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0 1.25rem;
+    margin-top: 1.5rem;
+    max-height: 640px;
+    h4 {
+        // text-align: center;
+        font-size: 90%;
+        font-weight: 100;
+        line-height: 1.25rem;
+        margin-bottom: .9rem;
+        a {
+            color: color(primary);
+            &:hover {
+                color: color(hover);
+            }
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+    }
+    div {
+        text-align: left;
+    }
+    a {
+        text-transform: none;
+        color: color(secondary);
+    }
+    @include medium {
+        grid-template-columns: 1fr 3fr;
+        div {
+            text-align: left;
+        }
+    }
+    @include desktop {
+        grid-template-columns: 1fr 3fr 3fr;
+        div {
+            text-align: right;
+        }
+    }
+}
+
+.space {
+    @include desktop {
+        display: none;
+    }
+}

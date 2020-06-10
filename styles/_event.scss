@@ -1,0 +1,85 @@
+.e-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0 1.25rem;
+    margin-top: 1.5rem;
+    max-height: 640px;
+    @include medium {
+        grid-template-columns: 1fr 3fr;
+    }
+    @include desktop {
+        grid-template-columns: 1fr 3fr 3fr;
+    }
+}
+
+.e-details {
+    .e-title {
+        margin-top: -.1rem;
+        line-height: 1.5rem;
+    }
+    .e-date {
+        margin-top: .5rem;
+    }
+    .e-venue {
+        margin-top: .5rem;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+    @include phone {
+        .e-venue {
+            margin-bottom: .9rem;
+        }
+    }
+    @include small {
+        .e-venue {
+            margin-bottom: .9rem;
+        }
+    }
+    @include medium {
+        text-align: right;
+    }
+    @include desktop {
+        text-align: right;
+    }
+}
+
+.e-image {
+    margin-bottom: 1.5rem;
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: .5%;
+    }
+}
+
+.space {
+    @include desktop {
+        display: none;
+    }
+}
+
+.e-body {
+    margin-top: -.25rem;
+    .e-info {
+        font-weight: 300;
+        margin-bottom: .9rem;
+    }
+    .e-with-word {
+        font-weight: 300;
+        color: color(primary);
+    }
+    .e-with {
+        margin-top: .9rem;
+        margin-bottom: .9rem;
+    }
+    // @include phone {
+    //     .e-info {
+    //         margin-top: 1.5rem;
+    //     }
+    // }
+    // @include small {
+    //     .e-info {
+    //         margin-top: 1.5rem;
+    //     }
+    // }
+}

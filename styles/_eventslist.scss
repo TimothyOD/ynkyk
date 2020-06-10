@@ -1,0 +1,67 @@
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    border-radius: .5%;
+    li {
+        list-style-type: none;
+    }
+    li img {
+        width: 100%;
+        height: auto;
+    }
+    .event-inner {
+        position: relative;
+    }
+    @include small {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include medium {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @include desktop {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.event-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: color(secondary);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-align: center;
+    color: color(primary);
+    // transition: 0.5s ease-in-out;
+    opacity: 0;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.event-name {
+    font-family: 'BioRhyme Expanded', serif;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.event-date {
+    font-size: .9rem;
+    font-weight: 800;
+    width: 100%;
+}

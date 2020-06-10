@@ -1,0 +1,67 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes No Klub</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+     <link rel="stylesheet" type="text/css" href="/styles/site.css" />
+ </head>
+
+
+
+  <body>
+    <div class="main-container">
+
+      <header>
+    <div class="main-header">
+    <div class="ynk-logo">
+        <a href="/">≠</a>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/events/">Events</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+      <div class="e-container">
+    <div class="e-details">
+        <div class="e-title"><h2>YNK ≠38_3</h2></div>
+        <div class="e-date"><h4>22/08/19</h4></div>
+        <div class="e-time"><h4>until 23/08/19 4pm - 9pm</h4></div>
+        <div class="e-venue">@ <a href="http://www.ethnictro.com/" target='_blank'>Ethnictro</a></div>
+    </div>
+    <div class="e-image">
+        <img src="/images/uploads/YNK38_Wrkshp.jpg" alt="/images/uploads/YNK38_Wrkshp.jpg"></img>
+    </div>
+    <div class="space"></div>
+    <div class="e-body">
+        <div class="e-info"><h4>Part of the Nusasonic Residency Program hosted by Yes No Klub</h4></div>
+        <div class="e-with-word"><p>with:</p></div>
+        <div class="e-with"><h4>Ableton Live Workshop for Women by Nadah El Shazly</h4></div>
+        <div class="e-content"><p>In this two day introductory workshop Nadah will cover the basics of sound, audio/midi differences, audio recording, audio effects, midi instruments, and mixing. You need to bring your laptop preferably with Ableton Live installed and headphones.</p>
+</div>
+    </div>
+</div>
+
+    </div>
+
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  </body>
+
+</html>
