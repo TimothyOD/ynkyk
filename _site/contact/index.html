@@ -1,0 +1,54 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes No Klub</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+     <link rel="stylesheet" type="text/css" href="/styles/site.css" />
+ </head>
+
+
+
+  <body>
+
+    <div class="main-container">
+
+      <div class="load-container">
+        <div class="loading-screen"></div>
+      </div>
+
+      <header>
+    <div class="main-header">
+    <div class="ynk-logo">
+        <a href="/">≠</a>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/events/">Events</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+      <p>Hello! Y'all</p>
+
+
+    </div>
+
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+</html>
