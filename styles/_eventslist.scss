@@ -45,10 +45,12 @@
     font-size: 0.75rem;
     text-align: center;
     color: color(primary);
-    // transition: 0.5s ease-in-out;
     opacity: 0;
     &:hover {
         opacity: 0.8;
+    }
+    @include phone {
+        padding-top: 1.5rem;
     }
 }
 
@@ -58,6 +60,10 @@
     line-height: 1.25rem;
     word-wrap: break-word;
     width: 100%;
+    @include phone {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
 }
 
 .event-date {

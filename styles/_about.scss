@@ -17,6 +17,7 @@
         }
         @include phone {
             font-size: 100%;
+            font-weight: 300;
             line-height: 1.4rem;
         }
     }
