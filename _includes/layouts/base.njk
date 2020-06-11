@@ -22,27 +22,12 @@
       });
     }
   </script>
-  <script>
-    function highlightCurrent() {
-         const curPage = document.URL;
-         const links = document.getElementsByTagName('a');
-         for (let link of links) {
-           if (link.href == curPage) {
-             link.classList.add("current");
-           }
-         }
-       }
 
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-       document.onreadystatechange = () => {
-         if (document.readyState === 'complete') {
-           highlightCurrent()
-         }
-       };
-</script>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-  <script src="/js/transitions.js"></script>
+  <script src="/js/site.js"></script>
 
   
 </html>

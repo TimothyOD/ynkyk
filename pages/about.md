@@ -18,8 +18,6 @@ Nusasonic is a multi-year project that plunges into a broad spectrum of experime
 
 </div>
 
-<div class="space"></div>
-
 <div class="a2">
 
 To date through the Nusasonic project Yes No Klub has organised a five day, multiple venue festival in Yogyakarta with participants from throughout Southeast Asia and Europe in 2018. In 2019 Yes No Klub also hosted a two month Nusasonic residency for <a href="https://nadahelshazly.bandcamp.com/" target="_blank">Nadah El Shazly</a> (Cario) and <a href="https://www.jessicaekomane.com" target="_blank">Jessica Ekomane</a> (Berlin). The resedency involed workshops, discussions, performances and collaborative projects with local artists/musicians and communities.

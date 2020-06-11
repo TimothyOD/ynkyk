@@ -52,12 +52,6 @@
     }
 }
 
-.space {
-    @include desktop {
-        display: none;
-    }
-}
-
 .e-body {
     margin-top: -0.25rem;
     .e-info {
@@ -71,5 +65,11 @@
     .e-with {
         margin-top: 0.9rem;
         margin-bottom: 0.9rem;
+    }
+    @include medium {
+        grid-column: 2/3;
+    }
+    @include desktop {
+        grid-column: 3/4;
     }
 }

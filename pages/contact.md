@@ -6,4 +6,4 @@ eleventyNavigation:
   order: 0
 ---
 
-Hello! Y'all
+Contact coming.

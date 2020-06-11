@@ -15,6 +15,9 @@ header {
             line-height: 4rem;
             color: color(primary);
             padding-bottom: 0.7rem;
+            .active {
+                color: color(secondary);
+            }
         }
         .ynk-sosmed {
             display: flex;
@@ -44,5 +47,13 @@ header {
     }
     a {
         color: color(primary);
+    }
+}
+
+.ynk-nav {
+    li {
+        .active {
+            color: color(secondary);
+        }
     }
 }
