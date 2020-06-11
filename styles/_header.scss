@@ -9,6 +9,7 @@ header {
         grid-gap: 0 1.25rem;
         align-items: center;
         .ynk-logo {
+            z-index: 10;
             font-family: 'BioRhyme Expanded', serif;
             font-weight: 900;
             font-size: 4rem;
@@ -35,14 +36,20 @@ header {
             margin-right: 0;
         }
     }
-    // .ynk-nav {
-    //     @include phone {
-    //         display: none;
-    //     }
-    // }
     .ynk-sosmed {
+        z-index: 10;
         .fab {
             font-size: 1.5rem;
+            margin-left: .25rem;
+        }
+        @include small {
+            justify-content: flex-start;
+        }
+        @include medium {
+            justify-content: center;
+        }
+        @include desktop {
+            justify-content: flex-end;
         }
     }
     a {
@@ -51,9 +58,53 @@ header {
 }
 
 .ynk-nav {
+    position: absolute;
+    right: 0;
     li {
         .active {
             color: color(secondary);
+        }
+    }
+}
+
+.ynk-nav label,
+#hamburger {
+    display: none;
+}
+
+@include phone {
+    .ynk-nav label {
+        display: inline-block;
+        font-family: 'BioRhyme Expanded', serif;
+        font-size: 2.25rem;
+        text-align: right;
+        margin-top: .4rem;
+    }
+    .ynk-nav {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        text-align: right;
+        li {
+            display: none;
+        }
+        input:checked~li {
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: flex-end;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            margin: 0;
+            background: color(base);
+        }
+    }
+    .ynk-nav label,
+    #hamburger {
+        &:hover {
+            color: color(hover);
+            cursor: pointer;
         }
     }
 }

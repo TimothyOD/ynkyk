@@ -24,6 +24,9 @@
         margin-top: 0.5rem;
         font-size: 0.9rem;
         text-transform: uppercase;
+        a:hover {
+            color: color(primary);
+        }
     }
     @include phone {
         .e-venue {
