@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'header';
+@import 'index';
 @import 'about';
 @import 'eventslist';
 @import 'event';
@@ -18,7 +19,7 @@ body {
     font-weight: 100;
     letter-spacing: 0.1rem;
     background: color(base);
-    color: color(secondary);
+    color: color(primary);
     scroll-behavior: smooth;
     transition: all ease-in-out;
 }
@@ -42,18 +43,18 @@ h3 {
     font-size: 1.2rem;
     line-height: 1.69rem;
     font-weight: 400;
-    color: color(secondary);
+    color: color(primary);
     margin-bottom: 0.9rem;
 }
 
 p {
     margin-bottom: 0.9rem;
-    color: color(primary);
+    color: color(secondary);
 }
 
 a,
 a:active {
-    color: color(primary);
+    color: color(secondary);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
@@ -88,7 +89,7 @@ a:hover {
         font-weight: 100;
         letter-spacing: 0.1rem;
         background: color(base);
-        color: color(secondary);
+        color: color(primary);
         scroll-behavior: smooth;
         transition: all ease-in-out;
     }
@@ -108,16 +109,16 @@ a:hover {
         font-size: 1.2rem;
         line-height: 1.69rem;
         font-weight: 400;
-        color: color(secondary);
+        color: color(primary);
         margin-bottom: 0.9rem;
     }
     p {
         margin-bottom: 0.9rem;
-        color: color(primary);
+        color: color(secondary);
     }
     a,
     a:active {
-        color: color(primary);
+        color: color(secondary);
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 300;
@@ -132,4 +133,8 @@ a:hover {
         max-width: 1020px;
         margin: 0 auto;
     }
+}
+
+.current {
+    color: #baada7;
 }

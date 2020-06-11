@@ -2,45 +2,47 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     background: color(base);
-    z-index: 1;
-    padding-top: 1.2rem;
-    padding-bottom: 0.5rem;
-    .ynk-logo {
-        font-size: 3.6rem;
-        line-height: 0;
-        font-family: 'BioRhyme Expanded', serif;
-        font-weight: 900;
-        a {
-            color: color(secondary);
-            &:hover {
-                color: color(hover);
-            }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        grid-gap: 0 1.25rem;
+        align-items: center;
+        .ynk-logo {
+            font-family: 'BioRhyme Expanded', serif;
+            font-weight: 900;
+            font-size: 4rem;
+            line-height: 4rem;
+            color: color(primary);
+            padding-bottom: 0.7rem;
+        }
+        .ynk-sosmed {
+            display: flex;
         }
     }
-    .main-nav {
-        a {
-            color: color(secondary);
-            &:hover {
-                color: color(hover);
-            }
-        }
-        ul {
-            display: flex;
-            padding-bottom: 0.7rem;
-            font-size: 0.9rem;
-            list-style: none;
-        }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        font-size: 0.9rem;
+        list-style: none;
         li {
             margin-left: 1rem;
             margin-right: 0;
         }
+    }
+    // .ynk-nav {
+    //     @include phone {
+    //         display: none;
+    //     }
+    // }
+    .ynk-sosmed {
+        .fab {
+            font-size: 1.5rem;
+        }
+    }
+    a {
+        color: color(primary);
     }
 }

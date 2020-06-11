@@ -10,10 +10,15 @@
         line-height: 1.25rem;
         margin-bottom: 0.9rem;
         a {
-            color: color(primary);
+            color: color(secondary);
             &:hover {
                 color: color(hover);
             }
+        }
+        @include small {
+            font-size: 100%;
+            font-weight: 300;
+            line-height: 1.4rem;
         }
         @include phone {
             font-size: 100%;
@@ -33,7 +38,7 @@
     }
     a {
         text-transform: none;
-        color: color(secondary);
+        color: color(primary);
     }
     @include medium {
         grid-template-columns: 1fr 3fr;

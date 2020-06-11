@@ -9,60 +9,119 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  background: #3d3d3d;
 }
 
-.main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 3fr;
+      grid-template-columns: 1fr 3fr 3fr;
+  grid-gap: 0 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  background: #3d3d3d;
-  z-index: 1;
-  padding-top: 1.2rem;
-  padding-bottom: 0.5rem;
 }
 
-.main-header .ynk-logo {
-  font-size: 3.6rem;
-  line-height: 0;
+header nav .ynk-logo {
   font-family: 'BioRhyme Expanded', serif;
   font-weight: 900;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #ff01fb;
+  padding-bottom: 0.7rem;
 }
 
-.main-header .ynk-logo a {
-  color: #ff00ff;
-}
-
-.main-header .ynk-logo a:hover {
-  color: dimgrey;
-}
-
-.main-header .main-nav a {
-  color: #ff00ff;
-}
-
-.main-header .main-nav a:hover {
-  color: dimgrey;
-}
-
-.main-header .main-nav ul {
+header nav .ynk-sosmed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 0.7rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   font-size: 0.9rem;
   list-style: none;
 }
 
-.main-header .main-nav li {
+header ul li {
   margin-left: 1rem;
   margin-right: 0;
+}
+
+header .ynk-sosmed .fab {
+  font-size: 1.5rem;
+}
+
+header a {
+  color: #ff01fb;
+}
+
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  height: 90%;
+  overflow: hidden;
+}
+
+.about-container div {
+  height: 100%;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.about-container div:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+}
+
+.about-container .a-bg1 {
+  background: url("/images/assets/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-container .a-bg2 {
+  background: url("/images/assets/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-container .a-bg3 {
+  background: url("/images/assets/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-container .a-bg4 {
+  background: url("/images/assets/bg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-container .a-bg5 {
+  background: url("/images/assets/bg5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .a-content {
@@ -83,11 +142,19 @@ header {
 }
 
 .a-content h4 a {
-  color: burlywood;
+  color: #dced31;
 }
 
 .a-content h4 a:hover {
   color: dimgrey;
+}
+
+@media (min-width: 500px) {
+  .a-content h4 {
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.4rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -115,7 +182,7 @@ header {
 
 .a-content a {
   text-transform: none;
-  color: #ff00ff;
+  color: #ff01fb;
 }
 
 @media (min-width: 650px) {
@@ -197,7 +264,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ff00ff;
+  background: #ff01fb;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,13 +277,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 0.75rem;
   text-align: center;
-  color: burlywood;
+  color: #dced31;
   opacity: 0;
 }
 
@@ -224,18 +289,32 @@ header {
   opacity: 0.8;
 }
 
+@media (min-width: 500px) {
+  .event-details {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 @media (max-width: 500px) {
   .event-details {
-    padding-top: 1.5rem;
+    padding: 0;
   }
 }
 
 .event-name {
   font-family: 'BioRhyme Expanded', serif;
-  font-size: 1.25rem;
+  font-size: 200rem;
   line-height: 1.25rem;
   word-wrap: break-word;
   width: 100%;
+}
+
+@media (min-width: 500px) {
+  .event-name {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -245,10 +324,29 @@ header {
   }
 }
 
+@media (min-width: 800px) {
+  .event-name {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
 .event-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 800;
   width: 100%;
+}
+
+@media (min-width: 500px) {
+  .event-date {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .event-date {
+    font-size: 0.9rem;
+  }
 }
 
 .e-container {
@@ -341,7 +439,7 @@ header {
 
 .e-body .e-with-word {
   font-weight: 300;
-  color: burlywood;
+  color: #ff01fb;
 }
 
 .e-body .e-with {
@@ -365,7 +463,7 @@ body {
   font-weight: 100;
   letter-spacing: 0.1rem;
   background: #3d3d3d;
-  color: #ff00ff;
+  color: #ff01fb;
   scroll-behavior: smooth;
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
@@ -391,18 +489,18 @@ h3 {
   font-size: 1.2rem;
   line-height: 1.69rem;
   font-weight: 400;
-  color: #ff00ff;
+  color: #ff01fb;
   margin-bottom: 0.9rem;
 }
 
 p {
   margin-bottom: 0.9rem;
-  color: burlywood;
+  color: #dced31;
 }
 
 a,
 a:active {
-  color: burlywood;
+  color: #dced31;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
@@ -425,60 +523,61 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1;
+  background: #3d3d3d;
 }
 
-.main-container .main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.main-container header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 3fr;
+      grid-template-columns: 1fr 3fr 3fr;
+  grid-gap: 0 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  background: #3d3d3d;
-  z-index: 1;
-  padding-top: 1.2rem;
-  padding-bottom: 0.5rem;
 }
 
-.main-container .main-header .ynk-logo {
-  font-size: 3.6rem;
-  line-height: 0;
+.main-container header nav .ynk-logo {
   font-family: 'BioRhyme Expanded', serif;
   font-weight: 900;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #ff01fb;
+  padding-bottom: 0.7rem;
 }
 
-.main-container .main-header .ynk-logo a {
-  color: #ff00ff;
-}
-
-.main-container .main-header .ynk-logo a:hover {
-  color: dimgrey;
-}
-
-.main-container .main-header .main-nav a {
-  color: #ff00ff;
-}
-
-.main-container .main-header .main-nav a:hover {
-  color: dimgrey;
-}
-
-.main-container .main-header .main-nav ul {
+.main-container header nav .ynk-sosmed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 0.7rem;
+}
+
+.main-container header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   font-size: 0.9rem;
   list-style: none;
 }
 
-.main-container .main-header .main-nav li {
+.main-container header ul li {
   margin-left: 1rem;
   margin-right: 0;
+}
+
+.main-container header .ynk-sosmed .fab {
+  font-size: 1.5rem;
+}
+
+.main-container header a {
+  color: #ff01fb;
 }
 
 .main-container .a-content {
@@ -499,11 +598,19 @@ a:hover {
 }
 
 .main-container .a-content h4 a {
-  color: burlywood;
+  color: #dced31;
 }
 
 .main-container .a-content h4 a:hover {
   color: dimgrey;
+}
+
+@media (min-width: 500px) {
+  .main-container .a-content h4 {
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.4rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -531,7 +638,7 @@ a:hover {
 
 .main-container .a-content a {
   text-transform: none;
-  color: #ff00ff;
+  color: #ff01fb;
 }
 
 @media (min-width: 650px) {
@@ -613,7 +720,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ff00ff;
+  background: #ff01fb;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,13 +733,11 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 0.75rem;
   text-align: center;
-  color: burlywood;
+  color: #dced31;
   opacity: 0;
 }
 
@@ -640,18 +745,32 @@ a:hover {
   opacity: 0.8;
 }
 
+@media (min-width: 500px) {
+  .main-container .event-details {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 @media (max-width: 500px) {
   .main-container .event-details {
-    padding-top: 1.5rem;
+    padding: 0;
   }
 }
 
 .main-container .event-name {
   font-family: 'BioRhyme Expanded', serif;
-  font-size: 1.25rem;
+  font-size: 200rem;
   line-height: 1.25rem;
   word-wrap: break-word;
   width: 100%;
+}
+
+@media (min-width: 500px) {
+  .main-container .event-name {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -661,10 +780,29 @@ a:hover {
   }
 }
 
+@media (min-width: 800px) {
+  .main-container .event-name {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
 .main-container .event-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 800;
   width: 100%;
+}
+
+@media (min-width: 500px) {
+  .main-container .event-date {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container .event-date {
+    font-size: 0.9rem;
+  }
 }
 
 .main-container .e-container {
@@ -757,7 +895,7 @@ a:hover {
 
 .main-container .e-body .e-with-word {
   font-weight: 300;
-  color: burlywood;
+  color: #ff01fb;
 }
 
 .main-container .e-body .e-with {
@@ -781,7 +919,7 @@ a:hover {
   font-weight: 100;
   letter-spacing: 0.1rem;
   background: #3d3d3d;
-  color: #ff00ff;
+  color: #ff01fb;
   scroll-behavior: smooth;
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
@@ -807,18 +945,18 @@ a:hover {
   font-size: 1.2rem;
   line-height: 1.69rem;
   font-weight: 400;
-  color: #ff00ff;
+  color: #ff01fb;
   margin-bottom: 0.9rem;
 }
 
 .main-container p {
   margin-bottom: 0.9rem;
-  color: burlywood;
+  color: #dced31;
 }
 
 .main-container a,
 .main-container a:active {
-  color: burlywood;
+  color: #dced31;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
@@ -834,5 +972,9 @@ a:hover {
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
+}
+
+.current {
+  color: #baada7;
 }
 /*# sourceMappingURL=site.css.map */
