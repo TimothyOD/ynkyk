@@ -2,6 +2,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background: color(base);
     nav {
         display: grid;
@@ -10,14 +12,14 @@ header {
         align-items: center;
         .ynk-logo {
             z-index: 10;
-            font-family: 'BioRhyme Expanded', serif;
-            font-weight: 900;
-            font-size: 4rem;
-            line-height: 4rem;
-            color: color(primary);
-            padding-bottom: 0.7rem;
-            .active {
-                color: color(secondary);
+            svg {
+                height: 30px;
+                path {
+                    fill: color(primary);
+                    &:hover {
+                        fill: color(hover);
+                    }
+                }
             }
         }
         .ynk-sosmed {
@@ -58,8 +60,6 @@ header {
 }
 
 .ynk-nav {
-    position: absolute;
-    right: 0;
     li {
         .active {
             color: color(secondary);
@@ -75,10 +75,26 @@ header {
 @include phone {
     .ynk-nav label {
         display: inline-block;
-        font-family: 'BioRhyme Expanded', serif;
-        font-size: 2.25rem;
-        text-align: right;
-        margin-top: .4rem;
+        width: 30px;
+        height: 30px;
+        .hamburger-btn {
+            width: 30px;
+            height: 6px;
+            justify-content: center;
+            background: color(primary);
+            transform: translateY(6px);
+        }
+        .hamburger-btn::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 30px;
+            height: 6px;
+            background: color(primary);
+        }
+        .hamburger-btn::after {
+            transform: translateY(12px);
+        }
     }
     .ynk-nav {
         box-sizing: border-box;
@@ -95,16 +111,17 @@ header {
             font-size: 1.25rem;
             line-height: 2.25rem;
             padding-top: 2rem;
-            padding-bottom: 2rem;
             margin: 0;
             background: color(base);
         }
     }
-    .ynk-nav label,
-    #hamburger {
+    .ynk-nav label {
         &:hover {
-            color: color(hover);
             cursor: pointer;
+            .hamburger-btn,
+            .hamburger-btn::after {
+                background: color(hover);
+            }
         }
     }
 }
