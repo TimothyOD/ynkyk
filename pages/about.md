@@ -12,7 +12,7 @@ eleventyNavigation:
 
 ### Yes No Klub utilises multiple venues and formats to facilitate local and international artists with touring and collaborative projects throughout South East Asia and beyond.
 
-Yes No Klub is an official host organisation for <a href="https://asialink.unimelb.edu.au/" target="_blank">AsiaLink</a> (Australia) in Indonesia and co-manages an ongoing project with the German cultural center <a href="https://www.goethe.de/ins/id/en/index.html" target="_blank">Goethe-Institute</a> and Germany's <a href="https://www.ctm-festival.de" target="_blank">CTM Festival</a> for Adventurous Music and Art, Singapore's <a href="https://www.facebook.com/playfreelyexperiment" target="_blank">Playfreely/Blackkaji</a> and Manila's <a href="https://www.wsk.io/" target="_blank">WSK Festival</a> entitled <a href="http://www.nusasonic.com" target="_blank">Nusasonic</a>.
+Yes No Klub is an official host organisation for <a href="https://asialink.unimelb.edu.au/" target="_blank">AsiaLink</a> (Australia) in Indonesia and co-manages an ongoing project with the German cultural center <a href="https://www.goethe.de/ins/id/en/index.html" target="_blank">Goethe-Institute</a> and Germany's <a href="https://www.ctm-festival.de" target="_blank">CTM Festival</a> for Adventurous Music and Art, Singapore's <a href="https://www.facebook.com/playfreelyexperiment" target="_blank">Playfreely / Blackkaji</a> and Manila's <a href="https://www.wsk.io/" target="_blank">WSK Festival</a> entitled <a href="http://www.nusasonic.com" target="_blank">Nusasonic</a>.
 
 Nusasonic is a multi-year project that plunges into a broad spectrum of experimental sound and music cultures in Southeast Asia, enabling dialogue within the region, with Europe, and beyond.
 

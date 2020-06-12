@@ -268,24 +268,6 @@ header a {
   }
 }
 
-@-webkit-keyframes fill {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #dced31;
-  }
-}
-
-@keyframes fill {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #dced31;
-  }
-}
-
 .a-content {
   display: -ms-grid;
   display: grid;
@@ -625,6 +607,14 @@ header a {
     -ms-grid-column-span: 1;
     grid-column: 3/4;
   }
+}
+
+.ynk-contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr;
+  margin-top: 1.5rem;
 }
 
 *,
