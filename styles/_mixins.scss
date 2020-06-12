@@ -13,6 +13,15 @@ hover: #dced31,
     $color-name);
 }
 
+// sitewide
+@mixin margin-top {
+    margin-top: 1.5rem;
+}
+
+@mixin transition {
+    transition: all 0.2s ease-in;
+}
+
 // media
 $phone: 500px;
 @mixin phone {

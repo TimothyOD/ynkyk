@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0 1.25rem;
-    margin-top: 1.5rem;
+    @include margin-top;
     max-height: 640px;
     h4 {
         font-size: 90%;

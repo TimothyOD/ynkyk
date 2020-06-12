@@ -7,8 +7,7 @@ header {
     background: color(base);
     nav {
         display: grid;
-        grid-template-columns: 1fr 3fr 3fr;
-        grid-gap: 0 1.25rem;
+        grid-template-columns: 1fr 3fr 1fr;
         align-items: center;
         .ynk-logo {
             z-index: 10;
@@ -16,49 +15,54 @@ header {
                 height: 30px;
                 path {
                     fill: color(primary);
+                    @include transition;
                     &:hover {
                         fill: color(hover);
                     }
                 }
             }
         }
-        .ynk-sosmed {
-            display: flex;
-        }
-    }
-    ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100%;
-        font-size: 0.9rem;
-        list-style: none;
-        li {
-            margin-left: 1rem;
-            margin-right: 0;
-        }
-    }
-    .ynk-sosmed {
-        z-index: 10;
-        .fab {
-            font-size: 1.5rem;
-            margin-left: .25rem;
-        }
-        @include small {
-            justify-content: flex-start;
-        }
-        @include medium {
-            justify-content: center;
-        }
-        @include desktop {
-            justify-content: flex-end;
-        }
-    }
-    a {
-        color: color(primary);
     }
 }
 
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.ynk-sosmed {
+    z-index: 10;
+    .fab {
+        font-size: 1.5rem;
+        color: color(primary);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        @include transition;
+        &:hover {
+            color: color(hover);
+        }
+    }
+}
+
+.ynk-nav {
+    li {
+        font-size: 0.9rem;
+        margin-left: 2rem;
+        margin-right: 0;
+        a {
+            color: color(primary);
+            @include transition;
+            &:hover {
+                color: color(hover);
+            }
+        }
+    }
+}
+
+// current
 .ynk-nav {
     li {
         .active {
@@ -67,6 +71,7 @@ header {
     }
 }
 
+// hamburger
 .ynk-nav label,
 #hamburger {
     display: none;
@@ -83,6 +88,7 @@ header {
             justify-content: center;
             background: color(primary);
             transform: translateY(6px);
+            @include transition;
         }
         .hamburger-btn::after {
             content: '';
@@ -91,6 +97,7 @@ header {
             width: 30px;
             height: 6px;
             background: color(primary);
+            @include transition;
         }
         .hamburger-btn::after {
             transform: translateY(12px);
