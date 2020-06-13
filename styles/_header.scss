@@ -29,7 +29,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     list-style: none;
 }
 
@@ -71,64 +70,26 @@ ul {
     }
 }
 
-// hamburger
-.ynk-nav label,
-#hamburger {
-    display: none;
-}
-
 @include phone {
-    .ynk-nav label {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        .hamburger-btn {
-            width: 30px;
-            height: 6px;
-            justify-content: center;
-            background: color(primary);
-            transform: translateY(6px);
-            @include transition;
-        }
-        .hamburger-btn::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            width: 30px;
-            height: 6px;
-            background: color(primary);
-            @include transition;
-        }
-        .hamburger-btn::after {
-            transform: translateY(12px);
-        }
-    }
     .ynk-nav {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        text-align: right;
         li {
             display: none;
         }
-        input:checked~li {
-            display: flex;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-content: flex-end;
-            font-size: 1.25rem;
-            line-height: 2.25rem;
-            padding-top: 2rem;
-            margin: 0;
-            background: color(base);
+    }
+}
+
+@include small {
+    .ynk-nav {
+        li {
+            display: none;
         }
     }
-    .ynk-nav label {
-        &:hover {
-            cursor: pointer;
-            .hamburger-btn,
-            .hamburger-btn::after {
-                background: color(hover);
-            }
+}
+
+@include medium {
+    .ynk-nav {
+        li {
+            display: inherit;
         }
     }
 }

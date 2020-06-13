@@ -30,13 +30,21 @@
                     </a>
                 </li>
             </ul>
-
             <ul class="ynk-nav">
-                <label for="hamburger"><div class="hamburger-btn"></div></label>
-                <input type="checkbox" id="hamburger" />
+                <button class="ynk-burger-btn" onclick="myFunction()">
+                    <div class="ynk-burger"></div>
+                </button>
                 <li><a href="{{ '/about/' | url }}">About</a></li>
                 <li><a href="{{ '/events/' | url }}">Events</a></li>
                 <li><a href="{{ '/contact/' | url }}">Contact</a></li>
             </ul>
         </nav>
+        <div id="ynk-burger-nav">
+            <ul>
+                <li><a href="{{ '/about/' | url }}">About</a></li>
+                <li><a href="{{ '/events/' | url }}">Events</a></li>
+                <li><a href="{{ '/contact/' | url }}">Contact</a></li>
+            </ul>
+        </div>
+
     </header>

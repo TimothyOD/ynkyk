@@ -16,13 +16,12 @@
     }
     @include desktop {
         grid-template-columns: 2fr 5fr 1fr;
-        text-align: right;
     }
 }
 
 input,
 textarea,
-button {
+button.ynk-contact-btn {
     width: 100%;
     height: 2.5rem;
     background: transparent;
@@ -38,6 +37,7 @@ button {
     padding: 0.5rem;
     &:focus {
         border-color: color(secondary);
+        outline: none;
     }
 }
 

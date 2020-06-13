@@ -51,30 +51,38 @@
                     </a>
                 </li>
             </ul>
-
             <ul class="ynk-nav">
-                <label for="hamburger"><div class="hamburger-btn"></div></label>
-                <input type="checkbox" id="hamburger" />
+                <button class="ynk-burger-btn" onclick="myFunction()">
+                    <div class="ynk-burger"></div>
+                </button>
                 <li><a href="/about/">About</a></li>
                 <li><a href="/events/">Events</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
         </nav>
+        <div id="ynk-burger-nav">
+            <ul>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/events/">Events</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+
     </header>
       <div class="ynk-contact">
   <h3>Send us stuff</h3>
   <form name="contact" method="POST" data-netlify="true">
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>
+      <label>Name: <input type="text" name="name" /></label>
     </p>
     <p>
-      <label>Your Email: <input type="email" name="email" /></label>
+      <label>Email: <input type="email" name="email" /></label>
     </p>
     <p>
       <label>Message: <textarea name="message"></textarea></label>
     </p>
     <p>
-      <button type="submit">Send</button>
+      <button class="ynk-contact-btn" type="submit">Send</button>
     </p>
   </form>
 </div>
@@ -97,6 +105,6 @@
        <script src="/js/site.js"></script>
  
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+  
 
 </html>

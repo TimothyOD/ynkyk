@@ -1,0 +1,106 @@
+.one,
+.two {
+    height: 25vh;
+}
+
+button.ynk-burger-btn {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.ynk-burger {
+    border: none;
+    width: 30px;
+    height: 6px;
+    justify-content: center;
+    background: color(primary);
+    transform: translateY(-6px);
+    @include transition;
+}
+
+.ynk-burger-btn::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 6px;
+    background: color(primary);
+    @include transition;
+}
+
+button.ynk-burger-btn {
+    &:hover {
+        .ynk-burger,
+        &::after {
+            background: color(hover);
+        }
+    }
+}
+
+#ynk-burger-nav {
+    padding-top: 1.5rem;
+    ul {
+        align-items: right;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    li {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: right;
+        margin-bottom: 1.5rem;
+        a {
+            color: color(primary);
+            @include transition;
+            &:hover {
+                color: color(hover);
+            }
+        }
+    }
+}
+
+button.ynk-burger-btn,
+#ynk-burger-nav {
+    display: none;
+}
+
+@include phone {
+    button.ynk-burger-btn {
+        display: inline-block;
+    }
+}
+
+@include small {
+    button.ynk-burger-btn {
+        display: inline-block;
+    }
+}
+
+@include medium {
+    button.ynk-burger-btn {
+        display: none;
+    }
+}
+
+// current
+#ynk-burger-nav {
+    li {
+        .active {
+            color: color(secondary);
+        }
+    }
+}

@@ -1,6 +1,7 @@
 .event-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
     align-items: center;
     overflow: hidden;
     @include margin-top;
@@ -17,12 +18,15 @@
     }
     @include small {
         grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0;
     }
     @include medium {
         grid-template-columns: repeat(5, 1fr);
+        grid-gap: 0;
     }
     @include desktop {
         grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0;
     }
 }
 
