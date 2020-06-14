@@ -68,7 +68,8 @@ button {
     a {
         font-size: 0.9rem;
         &:hover {
-            @include transition color: color(primary);
+            @include transition;
+            color: color(primary);
         }
     }
 }
