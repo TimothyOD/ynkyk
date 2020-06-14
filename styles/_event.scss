@@ -20,29 +20,55 @@
     .e-date {
         margin-top: 0.5rem;
     }
-    .e-venue {
+    .e-venue,
+    .e-pagination {
         margin-top: 0.5rem;
         font-size: 0.9rem;
         text-transform: uppercase;
         a:hover {
+            @include transition;
             color: color(primary);
         }
+    }
+    .e-pagination {
+        margin-top: -0.5rem;
+        margin-bottom: 0.9rem;
     }
     @include phone {
         .e-venue {
             margin-bottom: 0.9rem;
+        }
+        .e-pagination {
+            position: absolute;
+            right: 0;
+            margin-top: -2.1rem;
         }
     }
     @include small {
         .e-venue {
             margin-bottom: 0.9rem;
         }
+        .e-pagination {
+            position: absolute;
+            right: 0;
+            margin-top: -2.1rem;
+        }
     }
     @include medium {
         text-align: right;
+        .e-pagination {
+            position: relative;
+            margin-top: -0.5rem;
+            margin-bottom: 0.9rem;
+        }
     }
     @include desktop {
         text-align: right;
+        .e-pagination {
+            position: relative;
+            margin-top: -0.5rem;
+            margin-bottom: 0.9rem;
+        }
     }
 }
 

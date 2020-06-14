@@ -585,19 +585,33 @@ button.ynk-burger-btn,
   margin-top: 0.5rem;
 }
 
-.e-details .e-venue {
+.e-details .e-venue,
+.e-details .e-pagination {
   margin-top: 0.5rem;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
 
-.e-details .e-venue a:hover {
+.e-details .e-venue a:hover,
+.e-details .e-pagination a:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   color: #ff01fb;
+}
+
+.e-details .e-pagination {
+  margin-top: -0.5rem;
+  margin-bottom: 0.9rem;
 }
 
 @media (max-width: 500px) {
   .e-details .e-venue {
     margin-bottom: 0.9rem;
+  }
+  .e-details .e-pagination {
+    position: absolute;
+    right: 0;
+    margin-top: -2.1rem;
   }
 }
 
@@ -605,17 +619,32 @@ button.ynk-burger-btn,
   .e-details .e-venue {
     margin-bottom: 0.9rem;
   }
+  .e-details .e-pagination {
+    position: absolute;
+    right: 0;
+    margin-top: -2.1rem;
+  }
 }
 
 @media (min-width: 650px) {
   .e-details {
     text-align: right;
   }
+  .e-details .e-pagination {
+    position: relative;
+    margin-top: -0.5rem;
+    margin-bottom: 0.9rem;
+  }
 }
 
 @media (min-width: 800px) {
   .e-details {
     text-align: right;
+  }
+  .e-details .e-pagination {
+    position: relative;
+    margin-top: -0.5rem;
+    margin-bottom: 0.9rem;
   }
 }
 
@@ -745,6 +774,7 @@ button:hover {
 
 .ynk-success h4 {
   margin-top: 2.05rem;
+  margin-bottom: 1rem;
 }
 
 .ynk-success a {
