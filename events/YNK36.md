@@ -9,4 +9,4 @@ info:
 flyer: /images/uploads/YNK36.jpg
 ---
 
-#soyandsynth is soydivision.berlin (and @l\_\_\_kw )’s series of pop up experience, where indonesian’s inspired supper meets experimental music live performance. After established back in 2016 in Berlin, this project will be held in its home-country: Indonesia.
+#soyandsynth is soydivision.berlin (and @l\_\_\_kw )’s series of pop up experiences, where Indonesian inspired supper meets experimental live music performance. Established 2016 in Berlin, this project will be the first to be held in its home-country: Indonesia.
