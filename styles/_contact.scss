@@ -60,3 +60,15 @@ button {
 .hidden {
     display: none;
 }
+
+.ynk-success {
+    h4 {
+        margin-top: 2.05rem;
+    }
+    a {
+        font-size: 0.9rem;
+        &:hover {
+            @include transition color: color(primary);
+        }
+    }
+}

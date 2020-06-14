@@ -743,6 +743,20 @@ button:hover {
   display: none;
 }
 
+.ynk-success h4 {
+  margin-top: 2.05rem;
+}
+
+.ynk-success a {
+  font-size: 0.9rem;
+}
+
+.ynk-success a:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #ff01fb;
+}
+
 *,
 *::before,
 *::after {
