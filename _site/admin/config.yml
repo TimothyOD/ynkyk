@@ -2,32 +2,36 @@ backend:
   name: github
   repo: TimothyOD/ynkyk
 
-media_folder: "_site/images/uploads"
-public_folder: "/images/uploads"
+media_folder: '_site/images/uploads'
+public_folder: '/images/uploads'
 
 collections:
-  - name: "events"
-    label: "Events"
-    folder: "events"
+  - name: 'events'
+    label: 'Events'
+    folder: 'events'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "date", default: "" }
-      - { label: "Time", name: "time", widget: "string" }
-      - { label: "Venue", name: "venue", widget: "string" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'date', default: '' }
+      - { label: 'Time', name: 'time', widget: 'string' }
+      - { label: 'Venue', name: 'venue', widget: 'string' }
       - {
-          label: "Venue URL",
-          name: "venueURL",
-          widget: "string",
+          label: 'Venue URL',
+          name: 'venueURL',
+          widget: 'string',
           required: false,
         }
-      - { label: "With (Performers/Presenters", name: "with", widget: "string" }
       - {
-          label: "Additional Info",
-          name: "info",
-          widget: "string",
+          label: 'With (Performers/Presenters)',
+          name: 'with',
+          widget: 'string',
+        }
+      - {
+          label: 'Additional Info',
+          name: 'info',
+          widget: 'string',
           required: false,
         }
-      - { label: "Flyer", name: "flyer", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: 'Flyer', name: 'flyer', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
