@@ -5,6 +5,9 @@ backend:
 media_folder: '_site/images/uploads'
 public_folder: '/images/uploads'
 
+display_url: https://ynkyk.netlify.app/
+logo_url: https://ynkyk.netlify.app/images/assets/YNK_Logo.png
+
 collections:
   - name: 'events'
     label: 'Events'
