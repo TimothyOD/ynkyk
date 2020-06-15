@@ -106,11 +106,6 @@ ul {
   }
 }
 
-.one,
-.two {
-  height: 25vh;
-}
-
 button.ynk-burger-btn {
   position: absolute;
   right: 0;
@@ -428,6 +423,24 @@ button.ynk-burger-btn,
   list-style-type: none;
 }
 
+.event-container li:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.event-container li:nth-child(1) .event-name {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+
+.event-container li:nth-child(1) .event-date,
+.event-container li:nth-child(1) .event-venue {
+  font-size: 2rem;
+}
+
 .event-container li img {
   width: 100%;
   height: auto;
@@ -437,11 +450,30 @@ button.ynk-burger-btn,
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .event-container li:nth-child(1) .event-name {
+    font-size: 4em;
+    line-height: 3rem;
+  }
+  .event-container li:nth-child(1) .event-date,
+  .event-container li:nth-child(1) .event-venue {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 500px) {
   .event-container {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     grid-gap: 0;
+  }
+  .event-container li:nth-child(1) .event-name {
+    font-size: 4.5em;
+    line-height: 3.5rem;
+  }
+  .event-container li:nth-child(1) .event-date,
+  .event-container li:nth-child(1) .event-venue {
+    font-size: 1.5rem;
   }
 }
 
@@ -482,7 +514,7 @@ button.ynk-burger-btn,
           justify-content: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-align: center;
   color: #dced31;
   opacity: 0;
@@ -509,7 +541,6 @@ button.ynk-burger-btn,
 
 .event-name {
   font-family: 'BioRhyme Expanded', serif;
-  font-size: 200rem;
   line-height: 1.25rem;
   word-wrap: break-word;
   width: 100%;
@@ -531,14 +562,14 @@ button.ynk-burger-btn,
 
 @media (min-width: 800px) {
   .event-name {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
   }
 }
 
 .event-date {
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 400;
   width: 100%;
 }
 
