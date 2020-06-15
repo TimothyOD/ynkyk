@@ -486,6 +486,8 @@ button.ynk-burger-btn,
   text-align: center;
   color: #dced31;
   opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .event-details:hover {

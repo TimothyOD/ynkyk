@@ -1,0 +1,118 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YES NO KLUB</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+     <link rel="stylesheet" type="text/css" href="/styles/site.css" />
+
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        
+ </head>
+
+
+
+  <body>
+
+    <div class="main-container">
+
+      <header>
+    <nav>
+        <div class="ynk-logo">
+            <a href="/"><svg class="shadow" width="40" height="40" viewBox="0 0 40 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.8697 15.8641L21.4075
+                        24.2591H40V32.2219H17.1582L13.0148 40H5.68387L9.82749
+                        32.2219H0V24.2591H14.0239L18.486
+                        15.8641H0V7.90116H22.7358L26.9324 0H34.3161L30.1195
+                        7.90116H40V15.8642H25.8697V15.8641Z" fill="white" />
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="ynk-sosmed">
+                <li>
+                    <a href="https://www.instagram.com/yesnoklub/"
+                        target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li>
+                    <a href="https://www.facebook.com/yesnoklubyk"
+                        target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://soundcloud.com/yesnoklub"
+                        target="_blank">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="ynk-nav">
+                <button class="ynk-burger-btn" onclick="myFunction()">
+                    <div class="ynk-burger"></div>
+                </button>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/events/">Events</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="ynk-burger-nav">
+            <ul>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/events/">Events</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+      <div class="e-container">
+    <div class="e-details">
+        <div class="e-title"><h2>YNK ≠23</h2></div>
+        <div class="e-date"><h4>14/06/14</h4></div>
+        <div class="e-time"><h4>8pm</h4></div>
+        <div class="e-venue">@ <a href="https://oxenfree.net" target='_blank'>Oxen Free</a></div>
+        <div class="e-pagination">
+            
+            
+
+            <a href="/events/YNK23/">&#10094; Prev</a> /
+            
+        </div>
+    </div>
+    <div class="e-image">
+        <img src="/images/uploads/YNK23.jpg" alt="/images/uploads/YNK23.jpg"></img>
+    </div>
+    <div class="e-body">
+        
+        <div class="e-with-word"><p>with:</p></div>
+        <div class="e-with"><h4>Empat Lima (AUS), Talking Coasty (YK), Suddenly Sunday (YK) &amp; Luise Najib (YK)</h4></div>
+        <div class="e-content"></div>
+    </div>
+</div>
+
+
+    </div>
+
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+       <script src="/js/site.js"></script>
+ 
+  </body>
+  
+
+</html>
