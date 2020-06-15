@@ -38,3 +38,11 @@ collections:
         }
       - { label: 'Flyer', name: 'flyer', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+      - {
+          label: 'Documentation',
+          name: 'galleryImages',
+          widget: 'list',
+          summary: '{{fields.image}}',
+          field: { label: Image, name: image, widget: image },
+          required: false,
+        }
