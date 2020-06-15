@@ -2,4 +2,9 @@
 layout: layouts/base.njk
 permalink: /images/
 ---
-Images
+
+{% set eventslist = collections.events %}
+<ul class="event-container">
+{% include "layouts/images.njk" %}
+</ul>
+<h2>Working on it..</h2>

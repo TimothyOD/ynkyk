@@ -1,0 +1,12 @@
+
+{% for events in collections.events | reverse %}
+    {% if events.data.documentation %}
+        {# <ul class="event-container"> #}
+            {% for documentation in events.data.documentation %}
+            <li>
+                <img src="{{ documentation }}" alt="{{ events.data.title }}"></img></a>
+            </li>
+            {% endfor %}
+        {# </ul> #}
+    {% endif %}
+{% endfor %}

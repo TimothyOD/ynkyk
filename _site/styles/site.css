@@ -69,6 +69,14 @@ ul {
   color: #dced31;
 }
 
+@media (min-width: 800px) {
+  .ynk-sosmed {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .ynk-nav li {
   margin-left: 2rem;
   margin-right: 0;

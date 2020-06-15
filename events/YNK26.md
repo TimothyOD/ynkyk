@@ -7,4 +7,7 @@ venueURL: https://oxenfree.net
 with: Ora Iso (NYC), Electrocore (YK), Sulfur (YK) & Palasick (YK)
 info:
 flyer: /images/uploads/YNK26.jpg
+documentation:
+  - /images/uploads/YNK26_01.jpg
+  - /images/uploads/YNK26_02.jpg
 ---
