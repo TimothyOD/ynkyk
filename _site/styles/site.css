@@ -740,7 +740,6 @@ button.ynk-burger-btn,
 }
 
 .images-override .event-container li img {
-  z-index: 10;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -771,7 +770,6 @@ button.ynk-burger-btn,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
   cursor: pointer;
 }
 
