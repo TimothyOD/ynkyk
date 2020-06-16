@@ -3,8 +3,9 @@ layout: layouts/base.njk
 permalink: /images/
 ---
 
-{% set eventslist = collections.events %}
-<ul class="event-container">
-{% include "layouts/images.njk" %}
-</ul>
-<h2>Working on it..</h2>
+<div class="images-override">
+    <ul class="event-container">
+        {% include "layouts/images.njk" %}
+    </ul>
+</div>
+<script src="/js/lightbox.js"></script>

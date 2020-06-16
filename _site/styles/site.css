@@ -69,14 +69,6 @@ ul {
   color: #dced31;
 }
 
-@media (min-width: 800px) {
-  .ynk-sosmed {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
 .ynk-nav li {
   margin-left: 2rem;
   margin-right: 0;
@@ -732,6 +724,52 @@ button.ynk-burger-btn,
     -ms-grid-column-span: 1;
     grid-column: 3/4;
   }
+}
+
+.images-override .event-container {
+  grid-gap: 4px;
+  grid-row-gap: 0px;
+}
+
+.images-override .event-container li:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.images-override .event-container li img {
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 61, 61, 0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+#lightbox.active img {
+  max-width: 100%;
+  border-radius: 0.5%;
 }
 
 .ynk-contact {

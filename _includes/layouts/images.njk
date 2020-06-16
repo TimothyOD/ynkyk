@@ -5,7 +5,10 @@
             {% for documentation in events.data.documentation %}
             <li>
                 <img src="{{ documentation }}" alt="{{ events.data.title }}"></img></a>
+                {# <p>
+        {{ events.data.title }}</p> #}
             </li>
+            
             {% endfor %}
         {# </ul> #}
     {% endif %}
