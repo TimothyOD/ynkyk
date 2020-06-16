@@ -18,7 +18,7 @@ button.ynk-burger-btn {
     width: 30px;
     height: 6px;
     justify-content: center;
-    background: color(primary);
+    background: color(secondary);
     transform: translateY(-6px);
     @include transition;
 }
@@ -29,7 +29,7 @@ button.ynk-burger-btn {
     right: 0;
     width: 30px;
     height: 6px;
-    background: color(primary);
+    background: color(secondary);
     @include transition;
 }
 
@@ -37,7 +37,7 @@ button.ynk-burger-btn {
     &:hover {
         .ynk-burger,
         &::after {
-            background: color(hover);
+            background: color(primary);
         }
     }
 }

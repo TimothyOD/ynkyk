@@ -30,13 +30,13 @@ header nav .ynk-logo svg {
 }
 
 header nav .ynk-logo svg path {
-  fill: #ff01fb;
+  fill: #dced31;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
 header nav .ynk-logo svg path:hover {
-  fill: #dced31;
+  fill: #ff01fb;
 }
 
 ul {
@@ -129,7 +129,7 @@ button.ynk-burger-btn:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #ff01fb;
+  background: #dced31;
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
   -webkit-transition: all 0.2s ease-in;
@@ -142,13 +142,13 @@ button.ynk-burger-btn:focus {
   right: 0;
   width: 30px;
   height: 6px;
-  background: #ff01fb;
+  background: #dced31;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
 button.ynk-burger-btn:hover .ynk-burger, button.ynk-burger-btn:hover::after {
-  background: #dced31;
+  background: #ff01fb;
 }
 
 #ynk-burger-nav {

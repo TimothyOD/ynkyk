@@ -14,10 +14,10 @@ header {
             svg {
                 height: 30px;
                 path {
-                    fill: color(primary);
+                    fill: color(secondary);
                     @include transition;
                     &:hover {
-                        fill: color(hover);
+                        fill: color(primary);
                     }
                 }
             }
