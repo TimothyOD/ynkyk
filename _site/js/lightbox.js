@@ -11,6 +11,10 @@ jQuery(document).ready(function($) {
         // grab href from clicked element
         var image_href = $(this).attr("href");
 
+        // grab alt from clicked element
+        var image_alt = $(this).children().attr("alt");
+
+
         // determine the index of clicked trigger
         var slideNum = $('.lightboxTrigger').index(this);
 
@@ -26,6 +30,7 @@ jQuery(document).ready(function($) {
                 '<p>Click to close</p>' +
                 '<div id="slideshow">' +
                 '<ul></ul>' +
+                '<div class="alt"></div>' +
                 '<div class="nav">' +
                 '<a href="#prev" class="prev slide-nav">&#10094; Prev</a>' +
                 '<a href="#next" class="next slide-nav">next &#10095;</a>' +
@@ -46,6 +51,16 @@ jQuery(document).ready(function($) {
                 );
             });
 
+            // fill lightbox with .lightboxTrigger alt in #imageSet
+            $('#imageSet').find('.lightboxTrigger').each(function() {
+                var $alt = $(this).children().attr('alt');
+                $('#slideshow .alt').append(
+                    '<h4>' +
+                    $alt +
+                    '</h4>'
+                );
+            });
+
         }
 
         // setting size based on number of objects in slideshow
@@ -54,6 +69,10 @@ jQuery(document).ready(function($) {
         // hide all slide, then show the selected slide
         $('#slideshow ul > li').hide();
         $('#slideshow ul > li:eq(' + slideNum + ')').show();
+
+        // hide all alts, then show the selected alt
+        $('#slideshow .alt > h4').hide();
+        $('#slideshow .alt > h4:eq(' + slideNum + ')').show();
 
         // set current to selected slide
         current = slideNum;
@@ -101,6 +120,10 @@ jQuery(document).ready(function($) {
         // fadeOut curent slide, FadeIn next/prev slide
         $('#slideshow ul > li:eq(' + current + ')').fadeOut(0);
         $('#slideshow ul > li:eq(' + dest + ')').fadeIn(0);
+
+        // fadeOut curent alt, FadeIn next/prev alt
+        $('#slideshow .alt > h4:eq(' + current + ')').fadeOut(0);
+        $('#slideshow .alt > h4:eq(' + dest + ')').fadeIn(0);
 
         // update current slide
         current = dest;

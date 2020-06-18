@@ -4,7 +4,7 @@
             {% for documentation in events.data.documentation %}
             <li>
                 <div class="event-inner">
-                    <a href="{{ documentation }}" class="lightboxTrigger"><img src="{{ documentation }}" alt="{{ events.data.title }}"></a>
+                    <a href="{{ documentation }}" class="lightboxTrigger"><img src="{{ documentation }}" alt="{{ events.data.title }} {{ events.data.date | readableDate }} {{ events.data.time }} @ {{ events.data.venue }}"></a>
                 </div>
             </li>
             {% endfor %}
