@@ -8,7 +8,7 @@ header {
   z-index: 1;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: #3d3d3d;
+  background: #2a2e07;
 }
 
 header nav {
@@ -218,6 +218,25 @@ button.ynk-burger-btn,
   color: #dced31;
 }
 
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
 .ynk-home-container {
   height: 640px;
 }
@@ -225,11 +244,9 @@ button.ynk-burger-btn,
 #ynk-home {
   display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 640px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  max-width: 350px;
+  -webkit-transform: translate(0, -25%);
+          transform: translate(0, -25%);
   -webkit-animation: fill 0.5s ease forwards 3.5s;
           animation: fill 0.5s ease forwards 3.5s;
 }
@@ -757,12 +774,12 @@ button.ynk-burger-btn,
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(61, 61, 61, 0.9);
+  background: rgba(42, 46, 7, 0.9);
 }
 
 #lightbox p {
   text-align: right;
-  color: #3d3d3d;
+  color: #2a2e07;
   display: none;
 }
 
@@ -951,7 +968,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
   letter-spacing: 0.1rem;
-  background: #3d3d3d;
+  background: #2a2e07;
   color: #ff01fb;
   scroll-behavior: smooth;
   -webkit-transition: all ease-in-out;
