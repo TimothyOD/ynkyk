@@ -15,8 +15,8 @@ documentation:
   - /images/uploads/YNKNusasonic_06.jpg
   - /images/uploads/YNKNusasonic_05.jpg
   - /images/uploads/YNKNusasonic_07.jpg
-  - /images/uploads/YNKNusasonic_08.jpg
   - /images/uploads/YNKNusasonic_09.jpg
+  - /images/uploads/YNKNusasonic_08.jpg
   - /images/uploads/YNKNusasonic_10.jpg
   - /images/uploads/YNKNusasonic_11.jpg
   - /images/uploads/YNKNusasonic_12.jpg
@@ -37,7 +37,7 @@ documentation:
   - /images/uploads/YNKNusasonic_24.jpg
   - /images/uploads/YNKNusasonic_241.jpg
   - /images/uploads/YNKNusasonic_25.jpg
-  - /images/uploads/YNKNusasonic_26.jpg
+  # - /images/uploads/YNKNusasonic_26.jpg
   - /images/uploads/YNKNusasonic_27.jpg
   - /images/uploads/YNKNusasonic_28.jpg
   - /images/uploads/YNKNusasonic_29.jpg
@@ -57,13 +57,13 @@ documentation:
   - /images/uploads/YNKNusasonic_43.jpg
   - /images/uploads/YNKNusasonic_44.jpg
   # - /images/uploads/YNKNusasonic_45.jpg
-  - /images/uploads/YNKNusasonic_46.jpg
-  - /images/uploads/YNKNusasonic_47.jpg
-  - /images/uploads/YNKNusasonic_48.jpg
-  - /images/uploads/YNKNusasonic_49.jpg
+  # - /images/uploads/YNKNusasonic_46.jpg
+  # - /images/uploads/YNKNusasonic_47.jpg
+  # - /images/uploads/YNKNusasonic_48.jpg
+  # - /images/uploads/YNKNusasonic_49.jpg
   # - /images/uploads/YNKNusasonic_50.jpg
   - /images/uploads/YNKNusasonic_51.jpg
-  - /images/uploads/YNKNusasonic_511.jpg
+  # - /images/uploads/YNKNusasonic_511.jpg
   - /images/uploads/YNKNusasonic_52.jpg
   - /images/uploads/YNKNusasonic_53.jpg
   - /images/uploads/YNKNusasonic_54.jpg
@@ -72,7 +72,7 @@ documentation:
   - /images/uploads/YNKNusasonic_561.jpg
   - /images/uploads/YNKNusasonic_562.jpg
   - /images/uploads/YNKNusasonic_57.jpg
-  - /images/uploads/YNKNusasonic_58.jpg
+  # - /images/uploads/YNKNusasonic_58.jpg
   - /images/uploads/YNKNusasonic_59.jpg
   - /images/uploads/YNKNusasonic_60.jpg
   - /images/uploads/YNKNusasonic_601.jpg
