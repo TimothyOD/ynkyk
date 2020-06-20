@@ -16,3 +16,46 @@
     min-width: 50%;
     min-height: 50%;
 }
+
+.ynk-front {
+    position: absolute;
+    width: 135px;
+    margin-top: 4px;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: color(primary);
+    h4 {
+        font-size: 0.82rem;
+        line-height: 1.5rem;
+        font-weight: 100;
+        color: color(secondary);
+        margin-top: 0.25rem;
+    }
+     :before {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 1px;
+        content: ' ';
+        text-shadow: none;
+        background: color(secondary);
+        width: 135px;
+    }
+     :after {
+        display: inline-block;
+        margin-top: 10px;
+        height: 1px;
+        content: ' ';
+        text-shadow: none;
+        background: color(secondary);
+        width: 135px;
+    }
+    h4:before {
+        background: color(primary);
+        margin-bottom: 5px;
+    }
+    h4:after {
+        background: color(primary);
+        margin-top: 7px;
+    }
+}
