@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($color: color(base), $alpha: .9);
+    background: rgba($color: color(base), $alpha: 0.9);
 }
 
 #lightbox p {
@@ -69,6 +69,11 @@
     align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-top: 1.1rem;
+    border: 0;
+    border-top: 1px;
+    border-style: solid;
+    border-color: color(secondary);
 }
 
 .nav {

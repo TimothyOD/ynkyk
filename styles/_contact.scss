@@ -8,11 +8,24 @@
         line-height: 2.5rem;
         margin-top: 1rem;
     }
-    @include phone {
-        grid-template-columns: 1fr;
+    @include medium {
+        grid-template-columns: 2fr 6fr;
+        h3 {
+            text-align: right;
+        }
     }
     @include small {
         grid-template-columns: 1fr;
+        h3 {
+            text-align: left;
+        }
+    }
+    @include phone {
+        grid-template-columns: 1fr;
+        text-align: center;
+        h3 {
+            text-align: center;
+        }
     }
     @include desktop {
         grid-template-columns: 2fr 5fr 1fr;

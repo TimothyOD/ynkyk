@@ -7,6 +7,18 @@
     @include medium {
         grid-template-columns: 1fr 3fr;
     }
+    @include small {
+        grid-template-columns: 1fr;
+        div {
+            text-align: left;
+        }
+    }
+    @include phone {
+        grid-template-columns: 1fr;
+        div {
+            text-align: center;
+        }
+    }
     @include desktop {
         grid-template-columns: 1fr 3fr 3fr;
     }
@@ -30,35 +42,23 @@
             color: color(primary);
         }
     }
-    .e-pagination {
-        margin-top: -0.5rem;
-        margin-bottom: 0.9rem;
-    }
+    .e-pagination {}
     @include phone {
-        .e-venue {
-            margin-bottom: 0.9rem;
-        }
         .e-pagination {
             position: absolute;
             right: 0;
-            margin-top: -2.1rem;
         }
     }
     @include small {
-        .e-venue {
-            margin-bottom: 0.9rem;
-        }
         .e-pagination {
             position: absolute;
             right: 0;
-            margin-top: -2.1rem;
         }
     }
     @include medium {
         text-align: right;
         .e-pagination {
             position: relative;
-            margin-top: -0.5rem;
             margin-bottom: 0.9rem;
         }
     }
@@ -66,7 +66,6 @@
         text-align: right;
         .e-pagination {
             position: relative;
-            margin-top: -0.5rem;
             margin-bottom: 0.9rem;
         }
     }
@@ -98,7 +97,10 @@
     @include medium {
         grid-column: 2/3;
     }
-    @include desktop {
-        grid-column: 3/4;
+    @include small {
+        grid-column: 1/2;
+    }
+    @include phone {
+        grid-column: 1/2;
     }
 }

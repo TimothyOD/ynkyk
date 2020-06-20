@@ -5,7 +5,7 @@
 // colors
 $colors: ( primary: #ff01fb,
 secondary: #dced31,
-base: #353a00,
+base: #2f2f2f,
 hover: #dced31,
 );
 @function color($color-name) {
@@ -25,21 +25,21 @@ hover: #dced31,
 // media
 $phone: 500px;
 @mixin phone {
+    @media (max-width: #{$phone}) {
+        @content;
+    }
+}
+
+$small: 600px;
+@mixin small {
     @media (max-width: #{$small}) {
         @content;
     }
 }
 
-$small: 500px;
-@mixin small {
-    @media (min-width: #{$small}) {
-        @content;
-    }
-}
-
-$medium: 650px;
+$medium: 800px;
 @mixin medium {
-    @media (min-width: #{$medium}) {
+    @media (max-width: #{$medium}) {
         @content;
     }
 }

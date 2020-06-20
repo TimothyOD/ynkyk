@@ -1,15 +1,15 @@
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: color(base);
     nav {
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        display: flex;
         align-items: center;
         .ynk-logo {
+            flex-grow: 1;
             z-index: 100;
             svg {
                 height: 30px;
@@ -33,6 +33,7 @@ ul {
 }
 
 .ynk-sosmed {
+    flex-grow: 1;
     z-index: 10;
     .fab {
         font-size: 1.5rem;
@@ -47,6 +48,8 @@ ul {
 }
 
 .ynk-nav {
+    flex-grow: 1;
+    justify-content: flex-end;
     li {
         // font-size: 0.9rem;
         margin-left: 2rem;
@@ -61,35 +64,72 @@ ul {
     }
 }
 
+.ynk-burger {
+    display: none;
+    flex-grow: 1;
+    z-index: 10;
+    div {
+        margin-left: auto;
+        width: 30px;
+        height: 6px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        background: color(secondary);
+    }
+}
+
+@include medium {
+    body {
+        overflow-x: hidden;
+    }
+    .ynk-burger {
+        display: block;
+        cursor: pointer;
+        &:hover {
+            div {
+                @include transition;
+                background: color(primary);
+            }
+        }
+    }
+    .ynk-nav {
+        position: absolute;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
+        top: 62px;
+        right: 0px;
+        height: auto;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background: color(base);
+        border: 0;
+        border-top: 1px;
+        border-bottom: 1px;
+        border-style: solid;
+        border-color: color(secondary);
+        opacity: 0;
+        pointer-events: none;
+        li {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.toggle {
+    opacity: 1;
+    pointer-events: all;
+}
+
 // current
 .ynk-nav {
     li {
         .active {
             color: color(secondary);
-        }
-    }
-}
-
-@include phone {
-    .ynk-nav {
-        li {
-            display: none;
-        }
-    }
-}
-
-@include small {
-    .ynk-nav {
-        li {
-            display: none;
-        }
-    }
-}
-
-@include medium {
-    .ynk-nav {
-        li {
-            display: inherit;
         }
     }
 }
