@@ -5,6 +5,10 @@ header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: color(base);
+    border: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: color(secondary);
     nav {
         display: flex;
         align-items: center;

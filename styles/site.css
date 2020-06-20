@@ -9,6 +9,10 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background: #2f2f2f;
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #dced31;
 }
 
 header nav {
