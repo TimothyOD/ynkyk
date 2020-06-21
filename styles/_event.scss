@@ -53,6 +53,8 @@
         .e-pagination {
             position: absolute;
             right: 0;
+            padding-top: 0.9rem;
+            padding-bottom: 0.9rem;
         }
     }
     @include medium {

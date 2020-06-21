@@ -199,8 +199,8 @@ ul {
 
 .ynk-front {
   position: absolute;
+  bottom: 0;
   width: 135px;
-  margin-top: 4px;
   font-size: 1rem;
   line-height: 2rem;
   color: #ff01fb;
@@ -612,6 +612,8 @@ ul {
   .e-details .e-pagination {
     position: absolute;
     right: 0;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
   }
 }
 
@@ -988,6 +990,7 @@ a:hover {
   position: relative;
   width: 100%;
   max-width: 1020px;
+  min-height: 100%;
   margin: auto;
 }
 /*# sourceMappingURL=site.css.map */
