@@ -1,6 +1,6 @@
 ---
 title: YNK ≠41
-date: 2021-12-09T17:00:00.000Z
+date: 2021-12-10T17:00:00.000Z
 time: 7pm
 venue: Rumah Budaya Moloku Kie Raha
 with: Senyawa
